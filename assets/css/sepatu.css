@@ -1,0 +1,32 @@
+body {
+	background: rgb(179, 172, 172);
+}
+.header {
+	color: rgb(0, 0, 0);
+	font-size: 6.5em;
+	text-shadow: 0 0 20px rgb(255, 52, 2);
+}
+
+.untukhr {
+	overflow: visible;
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+	color: #333;
+	text-align: center;
+}
+.untukhr:after {
+	content: "Toko Sepatu Sejahtera";
+	display: inline-block;
+	position: relative;
+	top: -0.7em;
+	font-size: 1.5em;
+	padding: 0 0.25em;
+	background: rgb(226, 93, 93);
+}
+
+.teks {
+	background: rgb(139, 139, 139);
+	color: rgb(13, 24, 182);
+	text-shadow: 0 1px 1px white;
+}

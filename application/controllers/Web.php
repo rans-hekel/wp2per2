@@ -7,6 +7,7 @@ class Web extends CI_Controller
         parent::__construct();
     }
 
+
     public function index()
     {
         $data["judul"] = "Halaman Depan";

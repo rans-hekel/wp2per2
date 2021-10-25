@@ -23,12 +23,14 @@
                 <tr>
                     <th>Kode MTK</th>
                     <th>:</th>
-                    <th><input type="text" name="kode" placeholder="Input Kode MTK" maxlength="10"></th>
+                    <th><input type="text" name="kode" placeholder="Input Kode MTK" maxlength="10">
+                        <?= form_error('kode', '<small style="color:red">', '<small/>'); ?></th>
                 </tr>
                 <tr>
                     <th>Nama MTK</th>
                     <th>:</th>
-                    <th><input type="text" name="nama" placeholder="Input Nama MTK" maxlength="50"></th>
+                    <th><input type="text" name="nama" placeholder="Input Nama MTK" maxlength="50">
+                        <?= form_error('nama', '<small style="color:red">', '<small/>'); ?></th>
                 </tr>
                 <tr>
                     <th>SKS</th>
