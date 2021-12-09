@@ -80,4 +80,15 @@ class user extends CI_Controller
             redirect('user');
         }
     }
+    public function datauserr()
+    {
+        $data['judul'] = 'Data Semua User';
+        $data['user'] = $this->Modeluser->cekData(['email' => $this->session->userdata('email')])->row_array();
+        $data['anggota'] = $this->Modeluser->getUserLimit()->result_array();
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('admin/datauser', $data);
+        $this->load->view('templates/footer');
+    }
 }

@@ -13,7 +13,7 @@
                                                                                 ?></div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user/anggota'); ?>"><i class="fas fa-users fa-3x text-warning"></i></a>
+                            <a href="<?= base_url('user/datauserr'); ?>"><i class="fas fa-users fa-3x text-warning"></i></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
+                            <a href="<?= base_url('buku'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user'); ?>"><i class="fas fa-shopping-cart fa-3x text-danger"></i></a>
+                            <a href="<?= base_url('buku'); ?>"><i class="fas fa-shopping-cart fa-3x text-danger"></i></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                 <span class="fas fa-users text-primary mt-2 "> Data
                     User</span>
                 <a class="text-danger" href="<?php echo
-                                                base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
+                                                base_url('user/datauserr'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
             </div>
             <table class="table mt-3">
                 <thead>
