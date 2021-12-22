@@ -81,22 +81,19 @@
                             <option value="">Pilih Kategori</option>
                             <?php
                             foreach ($kategori as $k) { ?>
-                                <option value="<?= $k['id']; ?>"><?=
-                                                                    $k['kategori']; ?></option>
+                                <option value="<?= $k['id_kategori']; ?>"><?=
+                                                                            $k['nama_kategori']; ?></option>
                             <?php } ?>
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control form-control-user" id="pengarang" name="pengarang" placeholder="Masukkan 
-nama pengarang">
+                        <input type="text" class="form-control form-control-user" id="pengarang" name="pengarang" placeholder="Masukkan nama pengarang">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control form-control-user" id="penerbit" name="penerbit" placeholder="Masukkan 
-nama penerbit">
+                        <input type="text" class="form-control form-control-user" id="penerbit" name="penerbit" placeholder="Masukkan nama penerbit">
                     </div>
                     <div class="form-group">
-                        <select name="tahun" class="form-control 
-form-control-user">
+                        <select name="tahun" class="form-control form-control-user">
                             <option value="">Pilih Tahun</option>
                             <?php
                             for ($i = date('Y'); $i > 1000; $i--) {
@@ -110,8 +107,7 @@ form-control-user">
                         <input type="text" class="form-control form-control-user" id="isbn" name="isbn" placeholder="Masukkan ISBN">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control form-control-user" id="stok" name="stok" placeholder="Masukkan nominal 
-stok">
+                        <input type="text" class="form-control form-control-user" id="stok" name="stok" placeholder="Masukkan nominal stok">
                     </div>
                     <div class="form-group">
                         <input type="file" class="form-control form-control-user" id="image" name="image">
