@@ -221,4 +221,28 @@ Penerbit', 'required|min_length[3]', [
         $this->Modelbuku->hapusBuku($where);
         redirect('buku');
     }
+
+    public function detailBuku()
+    {
+        $id = $this->uri->segment(3);
+        $buku = $this->Modeluser->joinKategoriBuku(['buku.id' => $id])->result();
+        $data['user'] = "Pengunjung";
+        $data['title'] = "Detail Buku";
+        foreach ($buku as $fields) {
+            $data['judul'] = $fields->judul_buku;
+            $data['pengarang'] = $fields->pengarang;
+            $data['penerbit'] = $fields->penerbit;
+            $data['kategori'] = $fields->nama_kategori;
+            $data['tahun'] = $fields->tahun_terbit;
+            $data['isbn'] = $fields->isbn;
+            $data['gambar'] = $fields->image;
+            $data['dipinjam'] = $fields->dipinjam;
+            $data['dibooking'] = $fields->dibooking;
+            $data['stok'] = $fields->stok;
+            $data['id'] = $id;
+        }
+        $this->load->view('templates/templates-user/header', $data);
+        $this->load->view('buku/detail-buku', $data);
+        $this->load->view('templates/templates-user/footer');
+    }
 }
